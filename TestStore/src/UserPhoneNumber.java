@@ -1,13 +1,8 @@
+import lombok.Getter;
+import lombok.Setter;
 
 public class UserPhoneNumber {
 	
-	private int phoneNumber;
+@Getter @Setter private String phoneNumber;
 	
-	public int getPhoneNumber(){
-		return phoneNumber;
-	}
-	public void setPhoneNumber(int newPhoneNumber) {
-		this.phoneNumber = newPhoneNumber;
-	
-	}
 }

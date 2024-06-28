@@ -1,8 +1,9 @@
 import lombok.Getter;
 import lombok.Setter;
 
+@Getter @Setter
 public class UserPhoneNumber {
-	
-@Getter @Setter private String phoneNumber;
+	private long id;
+	private String phoneNumber;
 	
 }

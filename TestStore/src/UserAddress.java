@@ -1,8 +1,9 @@
 import lombok.Getter;
 import lombok.Setter;
 
+@Getter @Setter
 public class UserAddress {
-	
-	@Getter @Setter private String address;
+	private long id;
+	private String address;
    
 }

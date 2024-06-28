@@ -1,15 +1,16 @@
 import lombok.Getter;
 import lombok.Setter;
 
+@Getter @Setter
 public class User {
-	@Getter @Setter private long id;
-	@Getter @Setter private String login;
-	@Getter @Setter private char[] password;
-	@Getter @Setter private String firstName;
-	@Getter @Setter private String lastName;
-	@Getter @Setter private int birthday;
-	@Getter @Setter private boolean isBanned;
-	@Getter @Setter private boolean isDeleted;
-	@Getter @Setter private boolean isAdmin;
+	 private long id;
+	 private String login;
+	 private char[] password;
+	 private String firstName;
+	 private String lastName;
+	 private int birthday;
+	 private boolean isBanned;
+	 private boolean isDeleted;
+	 private boolean isAdmin;
 	
 }

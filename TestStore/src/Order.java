@@ -1,12 +1,13 @@
 import lombok.Getter;
 import lombok.Setter;
 
+@Getter @Setter
 public class Order {
-	@Getter @Setter private long id;
-	@Getter @Setter private boolean created;
-	@Getter @Setter private int statusId;
-	@Getter @Setter private int[] lastChanged;
-	@Getter @Setter private int totalPrice;
+	 private long id;
+	 private boolean created;
+	 private int statusId;
+	 private int[] lastChanged;
+	 private int totalPrice;
 	
 	public String getUserAddress(UserAddress userAddress) {
 		String UserAddress = userAddress.getAddress();

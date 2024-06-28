@@ -1,7 +1,7 @@
 import lombok.Getter;
 import lombok.Setter;
 
-@Getter @Setter
+ @Getter @Setter
 public class Order {
 	 private long id;
 	 private boolean created;
@@ -10,8 +10,7 @@ public class Order {
 	 private int totalPrice;
 	
 	public String getUserAddress(UserAddress userAddress) {
-		String UserAddress = userAddress.getAddress();
-		return UserAddress;
+		return userAddress.getAddress();
 	}
 	
 	public String getPhoneNumber(UserPhoneNumber userPhoneNumber) {	

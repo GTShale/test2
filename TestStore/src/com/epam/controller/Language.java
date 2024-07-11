@@ -1,7 +1,8 @@
-import lombok.Getter;
-import lombok.Setter;
+package com.epam.controller;
 
-@Getter @Setter
+import lombok.Data;
+
+@Data
 public class Language {
 	private long id;
 	private String shortName;

@@ -1,7 +1,10 @@
-import lombok.Getter;
-import lombok.Setter;
+package com.epam.data;
 
-@Getter @Setter
+import com.epam.controller.Language;
+
+import lombok.Data;
+
+@Data
 public class Category {
 	private long id;
 	private String name;

@@ -1,7 +1,8 @@
-import lombok.Getter;
-import lombok.Setter;
+package com.epam.data;
 
-@Getter @Setter
+import lombok.Data;
+
+@Data
 public class Goods {
 	private long id;
 	private String name;

@@ -10,5 +10,5 @@ public class Goods {
 	private int count;
 	private int price;
 	private long categoryId;
-	private boolean isDeleted;
+	private boolean isDeleted; //test
 }

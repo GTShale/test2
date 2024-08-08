@@ -1,4 +1,4 @@
-package com.epam.controller;
+package src.main.models;
 
 import lombok.Data;
 

@@ -1,5 +1,0 @@
-
-public class properties {
-	spring.application.name=arsen-app
-	server.port = 8081
-}

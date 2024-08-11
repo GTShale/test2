@@ -1,13 +1,15 @@
-import lombok.Getter;
-import lombok.Setter;
+package src.main.models;
 
-@Getter @Setter
+import lombok.Data;
+
+@Data
 public class Goods {
+	//dumbTest
 	private long id;
 	private String name;
 	private String discription;
 	private int count;
 	private int price;
 	private long categoryId;
-	private boolean isDeleted;
+	private boolean isDeleted; 
 }

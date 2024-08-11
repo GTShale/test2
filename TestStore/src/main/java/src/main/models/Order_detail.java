@@ -1,7 +1,8 @@
-import lombok.Getter;
-import lombok.Setter;
+package src.main.models;
 
-@Getter @Setter
+import lombok.Data;
+
+@Data
 public class Order_detail {
 	private long id;
 	private int quantity;

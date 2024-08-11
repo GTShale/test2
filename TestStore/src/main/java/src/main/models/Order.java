@@ -1,7 +1,8 @@
-import lombok.Getter;
-import lombok.Setter;
+package src.main.models;
 
- @Getter @Setter
+import lombok.Data;
+
+@Data
 public class Order {
 	 private long id;
 	 private boolean created;

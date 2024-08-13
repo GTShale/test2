@@ -8,17 +8,15 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import src.main.models.User;
-
 @RestController
 public class StoreController {
 	
     @Autowired
-    private DatabaseService databaseService;
-	
+    private UserService userService;
+
     @GetMapping("/user")
     public String user() {
-        List<User> users = databaseService.getUsers();
+        List<User> users = userService.getAllUsers();
         
         StringBuilder userInfo = new StringBuilder();
         for (User user : users) {
@@ -35,7 +33,11 @@ public class StoreController {
         
         return userInfo.toString();
     }
-	
+    
+    @GetMapping("/users")
+    public List<User> getAllUsers() {
+        return userService.getAllUsers();
+    }	
 	@GetMapping("/order")
 	public String order() {
 		return "Welcome to the order page";

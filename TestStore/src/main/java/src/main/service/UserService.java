@@ -1,9 +1,12 @@
-package src.main.app;
+package src.main.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import src.main.models.User;
+import src.main.repository.UserRepository;
 
 @Service
 public class UserService {

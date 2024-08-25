@@ -8,6 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
 public class BasicApplication {
 
 	public static void main(String[] args) {
+		int t =5;
 		
 		SpringApplication.run(BasicApplication.class, args);
 	}

@@ -1,4 +1,4 @@
-package src.main.models;
+package service;
 
 import java.time.LocalDate;
 
@@ -10,11 +10,10 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.Data;
 
-@Data 
+@Data
 @Entity
 @Table(name = "user")
 public class User {
-	
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 	 private Long id;
@@ -42,5 +41,5 @@ public class User {
 	
 	@Column(name = "is_deleted", nullable = true)
 	 private boolean isAdmin;
-	
+
 }
